@@ -36,6 +36,9 @@ Run from the repo root unless a line says otherwise. Each was run in the session
 - Speech engine (once per machine): `uv tool install piper-tts`
 - Voice files (once per machine): download `hi_IN-pratham-medium`, `hi_IN-rohan-medium`, `hi_IN-priyamvada-medium` and `ur_PK-aegis_female-medium` (`.onnx` and `.onnx.json`) from `huggingface.co/rhasspy/piper-voices` into `film/voices/`
 - Copy the engine and shared code into a part: `node film/sync.js <part>` (no name = every part). Run it after every edit to `film/shared/`.
+- Speak and measure a part's lines: `node film/tools/speak.js <part>` → `film/<part>/durations.js` and `out/vo/`. Run it after changing any spoken line.
+- Build a part, from inside `film/<part>`: `node song.js` (sound), `node engine/render.js video` (picture, about 6 frames a second), `node engine/render.js mux` (→ `out/<part>.mp4`), then `node engine/render.js verify --allow-unclear` and `node engine/render.js qa`.
+- Sound levels: `STEMS=1 node song.js && node engine/tools/levels.js out/music.wav out/stem-voice.wav out/stem-flute.wav`
 - Stills of a part: `cd film/<part> && node engine/render.js stills <seconds...>` → `out/stills/`
 - Character audition: `cd film/<part> && node engine/render.js cast` → `out/cast.png`
 - Never edit `film/engine/` or the copies under `film/<part>/engine` and `film/<part>/shared`.

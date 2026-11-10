@@ -24,15 +24,15 @@ created: 2026-11-10
   - **Files:** `film/shared/maps.js`
   - **Done when:** the map still shows all of Jammu and Kashmir and Ladakh inside India
   - **Covers:** FR-7
-- [~] **T004** — Render five style frames (river dawn, sepia court, chai stall, election map, war-room map) and stop for the owner's OK
+- [x] **T004** — Render five style frames (river dawn, sepia court, chai stall, election map, war-room map) and stop for the owner's OK
   - **Files:** `film/design-sheet/film.js`, `docs/designs/`
   - **Done when:** the stills are in `docs/designs/` and the owner has approved them
   - **Covers:** FR-8, FR-9, NFR-4
-- [ ] **T005** — Write the three music themes and the sound effects
+- [x] **T005** — Write the three music themes and the sound effects
   - **Files:** `film/shared/themes.js`, `film/shared/voices.js`
   - **Done when:** a test render of each theme and effect has measurable level
   - **Covers:** FR-10
-- [ ] **T006** — Build and render the Cold Open; stop for the owner's OK
+- [~] **T006** — Build and render the Cold Open; stop for the owner's OK
   - **Files:** `film/cold-open/`
   - **Done when:** the act file exists, checks pass or are listed, and the owner has approved it
   - **Covers:** FR-1, FR-2, FR-3, FR-4
