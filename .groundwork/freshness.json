@@ -1,0 +1,39 @@
+{
+  "AGENTS.md": {
+    "at": "2026-11-10T19:19:49+0000",
+    "by": "noreply@anthropic.com",
+    "epoch": 1794338389,
+    "hash": "69ff8ea4d781fbc7",
+    "snapshot": {
+      "signals": {}
+    }
+  },
+  "ARCHITECTURE.md": {
+    "at": "2026-11-10T19:19:49+0000",
+    "by": "noreply@anthropic.com",
+    "epoch": 1794338389,
+    "hash": "eec1c5d0cda3c2fd",
+    "snapshot": {
+      "layout": {
+        "mode": "\"keep\""
+      },
+      "rfcs": [],
+      "signals": {},
+      "toplevel": []
+    }
+  },
+  "CONSTITUTION.md": {
+    "at": "2026-11-10T19:19:49+0000",
+    "by": "noreply@anthropic.com",
+    "epoch": 1794338389,
+    "hash": "4121dcda72669c01",
+    "snapshot": {}
+  },
+  "PROJECT.md": {
+    "at": "2026-11-10T19:19:49+0000",
+    "by": "noreply@anthropic.com",
+    "epoch": 1794338389,
+    "hash": "5e3013538f182686",
+    "snapshot": {}
+  }
+}
