@@ -9,15 +9,17 @@
     }
   },
   "ARCHITECTURE.md": {
-    "at": "2026-11-10T19:22:34+0000",
+    "at": "2026-11-10T19:30:21+0000",
     "by": "noreply@anthropic.com",
-    "epoch": 1794338554,
+    "epoch": 1794339021,
     "hash": "eec1c5d0cda3c2fd",
     "snapshot": {
       "layout": {
         "mode": "\"keep\""
       },
-      "rfcs": [],
+      "rfcs": [
+        "RFC-0001-sindhu-accord-film"
+      ],
       "signals": {},
       "toplevel": [
         "docs"
