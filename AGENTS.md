@@ -31,6 +31,16 @@ add an ignore comment or skip a test to make it pass; an ignore needs a reason o
 9. Log through the project's logger, never print in core code, and never log secrets or personal data.
 10. Keep files under the size limit and functions short; split by responsibility.
 
+## Film commands
+Run from the repo root unless a line says otherwise. Each was run in the session of 2026-11-10.
+- Speech engine (once per machine): `uv tool install piper-tts`
+- Voice files (once per machine): download `hi_IN-pratham-medium`, `hi_IN-rohan-medium`, `hi_IN-priyamvada-medium` and `ur_PK-aegis_female-medium` (`.onnx` and `.onnx.json`) from `huggingface.co/rhasspy/piper-voices` into `film/voices/`
+- Copy the engine and shared code into a part: `node film/sync.js <part>` (no name = every part). Run it after every edit to `film/shared/`.
+- Stills of a part: `cd film/<part> && node engine/render.js stills <seconds...>` → `out/stills/`
+- Character audition: `cd film/<part> && node engine/render.js cast` → `out/cast.png`
+- Never edit `film/engine/` or the copies under `film/<part>/engine` and `film/<part>/shared`.
+- No `Math.random` or clock time in film code: parallel render workers must draw identical frames.
+
 ## Working across repos
 - This is the **workspace**: it owns boundaries. Each repo owns its craft.
 - Stay in the repo you were asked about. A change that needs another repo is a conversation,

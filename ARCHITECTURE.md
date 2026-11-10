@@ -23,8 +23,10 @@ film/<act>/out/*.mp4  ->  ffmpeg concat  ->  out/shanti-dweep.mp4 (+ .srt, tease
 | film/<act>/score.js | The timeline: tempo, music, voice lines, subtitles, every event | JavaScript | iaacc7640-max |
 | film/<act>/song.js | Synthesizes the soundtrack and voices from the score | Node 22 | iaacc7640-max |
 | film/<act>/film.js | Draws frame `t` from the score | Canvas in headless Chrome | iaacc7640-max |
-| film/<act>/engine/ | The skill's toolkit, copied in, never edited per film | JavaScript | animation-studio skill |
-| film/shared/ | Character designs and helpers reused by every act | JavaScript | iaacc7640-max |
+| film/engine/ | The skill's toolkit, committed once, never edited | JavaScript | animation-studio skill |
+| film/shared/ | Cast, look, maps and sets reused by every part | JavaScript | iaacc7640-max |
+| film/sync.js | Copies `film/engine` and `film/shared` into each part (the copies are git-ignored) | Node 22 | iaacc7640-max |
+| film/design-sheet/ | Character sheet and style frames (stills only) | JavaScript | iaacc7640-max |
 
 ## Data flow
 `score.js` is the single source of truth. `song.js` reads it and writes the audio. The renderer
@@ -48,4 +50,4 @@ None. One repo, no outside services at run time.
 - Rendered video and audio (`out/` folders) and downloaded voice files are not committed to git.
 
 ## Local development
-Exact commands are recorded in AGENTS.md once the first act project is scaffolded.
+Exact commands are in AGENTS.md under "Film commands". In short: `node film/sync.js` copies the engine and the shared code into each part, then each part is built from inside its own folder.

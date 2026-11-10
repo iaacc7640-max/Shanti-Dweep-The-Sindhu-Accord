@@ -12,19 +12,19 @@ created: 2026-11-10
 > `[P]` marks tasks on disjoint files. Legend: `[ ]` not started · `[~]` in progress · `[x]` done.
 > Mark a task `[x]` only after its "done when" is verified.
 
-- [ ] **T001** — Install Piper and the four voice files; prove each voice speaks a test line
+- [x] **T001** — Install Piper and the four voice files; prove each voice speaks a test line
   - **Files:** `film/voices/` (git-ignored), `.gitignore`, `AGENTS.md`
   - **Done when:** four test `.wav` files exist with non-zero sound
   - **Covers:** FR-2, FR-11
-- [ ] **T002** — Scaffold `film/design-sheet` and the shared cast and look files
+- [x] **T002** — Scaffold `film/design-sheet` and the shared cast and look files
   - **Files:** `film/design-sheet/`, `film/shared/cast.js`, `film/shared/look.js`
   - **Done when:** a character sheet still shows Bhaskar and Fatima, young and old, plus the two silhouettes
   - **Covers:** FR-5, FR-6, FR-9
-- [ ] **T003** — Draw the India outline and map helpers; render a map still
+- [x] **T003** — Draw the India outline and map helpers; render a map still
   - **Files:** `film/shared/maps.js`
   - **Done when:** the map still shows all of Jammu and Kashmir and Ladakh inside India
   - **Covers:** FR-7
-- [ ] **T004** — Render five style frames (river dawn, sepia court, chai stall, election map, war-room map) and stop for the owner's OK
+- [~] **T004** — Render five style frames (river dawn, sepia court, chai stall, election map, war-room map) and stop for the owner's OK
   - **Files:** `film/design-sheet/film.js`, `docs/designs/`
   - **Done when:** the stills are in `docs/designs/` and the owner has approved them
   - **Covers:** FR-8, FR-9, NFR-4

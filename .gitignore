@@ -2,3 +2,8 @@
 .env
 .env.*
 !.env.example
+# Film: downloaded voice files, rendered output, and per-part copies made by film/sync.js
+film/voices/
+film/*/out/
+film/*/engine/
+film/*/shared/
