@@ -2,7 +2,7 @@
 id: 001-sindhu-accord-film
 rfc: RFC-0001
 title: Sindhu Accord Film
-status: draft
+status: approved
 created: 2026-11-10
 author: iaacc7640-max
 requested_by: iaacc7640-max
@@ -13,6 +13,7 @@ extends: []
 depends_on: []
 builds_against: []
 amends: []
+approved_by: [noreply@anthropic.com]
 ---
 
 # Spec: Sindhu Accord Film

@@ -8,5 +8,15 @@
       }
     ],
     "changes": 0
+  },
+  "specs/001-sindhu-accord-film/spec.md": {
+    "hash": "b07d9003b51818d9bbb271e72d92fed5b79320474b996a2ba86cf772c18b696a",
+    "signers": [
+      {
+        "who": "noreply@anthropic.com",
+        "at": "2026-11-10T19:30:52+0000"
+      }
+    ],
+    "changes": 0
   }
 }
