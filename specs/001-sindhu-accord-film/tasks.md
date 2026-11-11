@@ -36,11 +36,11 @@ created: 2026-11-10
   - **Files:** `film/cold-open/`
   - **Done when:** the act file exists, checks pass or are listed, and the owner has approved it
   - **Covers:** FR-1, FR-2, FR-3, FR-4
-- [~] **T007** — Build and render Act I; stop for the owner's OK
+- [x] **T007** — Build and render Act I; stop for the owner's OK
   - **Files:** `film/act-1/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-6, FR-9
-- [ ] **T008** — Build and render Act II; stop for the owner's OK
+- [~] **T008** — Build and render Act II; stop for the owner's OK
   - **Files:** `film/act-2/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-7, FR-8

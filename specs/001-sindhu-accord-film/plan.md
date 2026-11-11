@@ -17,7 +17,7 @@ Build with the `animation-studio` skill, one small film project per part, joined
 - **Maps** (FR-7): the engine's Natural Earth outlines are used for neighbours. India's outline is drawn from a hand-made point list that includes all of Jammu and Kashmir and Ladakh, checked by eye against the Survey of India political map.
 - **Order of work** matches the owner's stops: designs and style frames first (a `film/design-sheet` project that renders stills only), then one act at a time, each shown before the next.
 - **Joining**: ffmpeg concatenates the six act files into `out/shanti-dweep.mp4`; the subtitle files are merged with time offsets into `out/shanti-dweep.srt` (FR-14, NFR-1).
-- **Teasers** (FR-13): each act's project is re-rendered in 9:16 with its shots re-staged from layout sizes, cut to the shots named in `docs/shotlist.md`.
+- **Teasers** (FR-13): `film/tools/teasers.js` cuts each teaser from the rendered parts by spoken line, lays the wide picture over a blurred copy of itself in a 1080x1920 frame, and adds the fiction tag, the title and a hook line.
 - **Loudness** (NFR-3): each act is mastered to -14 LUFS with music ducked under speech.
 
 ## 2. Affected modules and files

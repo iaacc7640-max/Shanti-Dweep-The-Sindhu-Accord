@@ -45,7 +45,7 @@ See RFC-0001 for the decision and its trade-offs.
 - **FR-10**: The soundtrack MUST carry three themes: Bhaskar (Konkan), Fatima (Hindustani) and the Accord (both combined), plus sound effects for court, chai stall, crowds, war room, train, fireworks and river.
 - **FR-11**: Three distinct voices MUST be used: narrator, Bhaskar and Fatima. The news reader and the minister may reuse a voice at a different pitch.
 - **FR-12**: The film MUST end on the Devanagari line "गिलगित से गारो तक... आज़ादी पर्व मनाएंगे." followed by credits that repeat the fiction notice.
-- **FR-13**: Five vertical 9:16 teasers MUST be delivered: one each for Act I, Act II, Act III, Act IV and the Epilogue (the Cold Open is part of the Act I teaser). Each is 20–45 seconds and re-staged for vertical, not cropped.
+- **FR-13**: Five vertical 9:16 teasers MUST be delivered: one each for Act I, Act II, Act III, Act IV and the Epilogue (the Cold Open is part of the Act I teaser). Each is 20–45 seconds and is a framed cut: the finished wide picture, uncropped, sits in a tall frame with the fiction tag, the title and a hook line.
 - **FR-14**: An English subtitle file (`.srt`) MUST be delivered with the film.
 - **FR-15**: A known-issues list MUST be delivered with the film.
 
@@ -97,3 +97,6 @@ likenesses of real people; a Marathi accent for Bhaskar's voice; dubbed versions
 - One timeline → kept in the plan; each act has a single timeline for sound and picture.
 - Consistent characters → FR-5.
 - Guardrails (logos, gore, likenesses, map, slurs) → FR-6, FR-7, FR-8, NFR-5.
+
+## Changes
+- 2026-11-11 — FR-13 changed from "re-staged for vertical" to "framed cut". Why: re-staging means redrawing every chosen shot; the owner chose the framed cut when asked on 2026-11-11.

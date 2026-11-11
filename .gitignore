@@ -7,3 +7,6 @@ film/voices/
 film/*/out/
 film/*/engine/
 film/*/shared/
+# Delivered video is not committed
+/out/*.mp4
+/out/teasers/
