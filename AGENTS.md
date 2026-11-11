@@ -39,6 +39,8 @@ Run from the repo root unless a line says otherwise. Each was run in the session
 - Speak and measure a part's lines: `node film/tools/speak.js <part>` → `film/<part>/durations.js` and `out/vo/`. Run it after changing any spoken line.
 - Build a part, from inside `film/<part>`: `node song.js` (sound), `node engine/render.js video` (picture, about 6 frames a second), `node engine/render.js mux` (→ `out/<part>.mp4`), then `node engine/render.js verify --allow-unclear` and `node engine/render.js qa`.
 - Sound levels: `STEMS=1 node song.js && node engine/tools/levels.js out/music.wav out/stem-voice.wav out/stem-flute.wav`
+- Join the film: `node film/build.js` → `out/shanti-dweep.mp4`, `out/shanti-dweep.srt`, `out/build-report.json`; exits 1 if a check fails.
+- Vertical teasers: `node film/tools/teasers.js [T1 ...]` → `out/teasers/`
 - Stills of a part: `cd film/<part> && node engine/render.js stills <seconds...>` → `out/stills/`
 - Character audition: `cd film/<part> && node engine/render.js cast` → `out/cast.png`
 - Never edit `film/engine/` or the copies under `film/<part>/engine` and `film/<part>/shared`.

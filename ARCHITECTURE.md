@@ -27,6 +27,9 @@ film/<act>/out/*.mp4  ->  ffmpeg concat  ->  out/shanti-dweep.mp4 (+ .srt, tease
 | film/shared/ | Cast, look, maps and sets reused by every part | JavaScript | iaacc7640-max |
 | film/sync.js | Copies `film/engine` and `film/shared` into each part (the copies are git-ignored) | Node 22 | iaacc7640-max |
 | film/design-sheet/ | Character sheet and style frames (stills only) | JavaScript | iaacc7640-max |
+| film/tools/ | Speak and measure a part's lines; cut the vertical teasers | Node 22, Piper, ffmpeg | iaacc7640-max |
+| film/build.js | Joins the parts into the film, writes the subtitle file, checks size, rate, length and script text | Node 22, ffmpeg | iaacc7640-max |
+| out/ | Delivered files: the film, subtitles, teasers, build report, known issues (video is git-ignored) | — | iaacc7640-max |
 
 ## Data flow
 `score.js` is the single source of truth. `song.js` reads it and writes the audio. The renderer

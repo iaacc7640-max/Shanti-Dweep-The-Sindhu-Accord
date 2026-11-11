@@ -1,7 +1,7 @@
 ---
 id: 001-sindhu-accord-film
 spec: spec.md
-spec_version: b07d9003b51818d9bbb271e72d92fed5b79320474b996a2ba86cf772c18b696a
+spec_version: 08ab239ec85d57da955bf5671857b56c5c116613211bc91227a9fa1848839b33
 plan: plan.md
 created: 2026-11-10
 ---
@@ -61,7 +61,7 @@ created: 2026-11-10
   - **Done when:** `out/shanti-dweep.mp4` is 1920x1080, 30 fps, 11–13 minutes, with `out/shanti-dweep.srt`
   - **Covers:** FR-1, FR-14, NFR-1, NFR-2
 - [ ] **T013** — Render the five vertical teasers
-  - **Files:** `film/*/`, `out/teasers/`
+  - **Files:** `film/tools/teasers.js`, `out/teasers/`
   - **Done when:** five 1080x1920 files of 20–45 seconds exist
   - **Covers:** FR-13
 - [ ] **T014** — Final checks and the known-issues list

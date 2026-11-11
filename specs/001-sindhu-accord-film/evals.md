@@ -1,7 +1,7 @@
 ---
 id: 001-sindhu-accord-film
 spec: spec.md
-spec_version: b07d9003b51818d9bbb271e72d92fed5b79320474b996a2ba86cf772c18b696a
+spec_version: 08ab239ec85d57da955bf5671857b56c5c116613211bc91227a9fa1848839b33
 created: 2026-11-10
 ---
 

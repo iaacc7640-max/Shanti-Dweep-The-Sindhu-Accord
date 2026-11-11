@@ -7,13 +7,13 @@ Read this before searching the code: it says where each kind of code lives.
 
 **Layout:** keep (own structure)
 New code goes next to existing code of the same kind and copies its patterns.
-**Languages:** JavaScript/TypeScript (321 files)
+**Languages:** JavaScript/TypeScript (323 files)
 
 ## Folders
 
 | Folder | Role | Code files | Holds |
 | --- | --- | --- | --- |
-| `film` | — | 1 | the film: one folder per part, plus `sync.js` which copies engine and shared code into each part |
+| `film` | — | 2 | the film: one folder per part, plus `sync.js` which copies engine and shared code into each part |
 | `film/act-1` | — | 4 | Act I: the 1916 court, the cracked map, Chiplun, the chai stall |
 | `film/act-1/engine` | — | 4 | git-ignored copy of `film/engine`, made by `film/sync.js` |
 | `film/act-1/engine/audio` | — | 7 | git-ignored copy of `film/engine`, made by `film/sync.js` |
@@ -69,7 +69,7 @@ New code goes next to existing code of the same kind and copies its patterns.
 | `film/epilogue/engine/video` | — | 7 | git-ignored copy of `film/engine`, made by `film/sync.js` |
 | `film/epilogue/shared` | — | 8 | git-ignored copy of `film/shared`, made by `film/sync.js` |
 | `film/shared` | — | 8 | this film's own shared code: cast, look, maps (India outline), sets |
-| `film/tools` | — | 1 | command-line helpers: speak and measure a part's lines |
+| `film/tools` | — | 2 | command-line helpers: speak and measure a part's lines |
 
 ## Outside systems (where they are called)
 
