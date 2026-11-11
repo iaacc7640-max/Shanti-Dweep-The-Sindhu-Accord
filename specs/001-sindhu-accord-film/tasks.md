@@ -32,11 +32,11 @@ created: 2026-11-10
   - **Files:** `film/shared/themes.js`, `film/shared/voices.js`
   - **Done when:** a test render of each theme and effect has measurable level
   - **Covers:** FR-10
-- [~] **T006** — Build and render the Cold Open; stop for the owner's OK
+- [x] **T006** — Build and render the Cold Open; stop for the owner's OK
   - **Files:** `film/cold-open/`
   - **Done when:** the act file exists, checks pass or are listed, and the owner has approved it
   - **Covers:** FR-1, FR-2, FR-3, FR-4
-- [ ] **T007** — Build and render Act I; stop for the owner's OK
+- [~] **T007** — Build and render Act I; stop for the owner's OK
   - **Files:** `film/act-1/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-6, FR-9

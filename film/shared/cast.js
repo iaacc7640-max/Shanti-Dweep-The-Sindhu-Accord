@@ -70,6 +70,17 @@
     c.beginPath(); c.moveTo(-40, -150); c.quadraticCurveTo(-52, -214, 0, -216); c.quadraticCurveTo(52, -214, 40, -150); c.quadraticCurveTo(0, -176, -40, -150); c.fill();
   });
 
+  // A plain standing figure seen from behind, as a solid shape (crowds, onlookers, backs of heads).
+  SD.silFigure = (ctx, x, y, s = 1, color = '#231710', { child = false } = {}) => sil(ctx, x, y, s * (child ? 0.62 : 1), color, (c) => {
+    c.beginPath(); c.moveTo(-58, 0); c.quadraticCurveTo(-62, -170, -40, -226); c.quadraticCurveTo(0, -246, 40, -226); c.quadraticCurveTo(62, -170, 58, 0); c.closePath(); c.fill();
+    c.beginPath(); c.ellipse(0, -272, child ? 40 : 34, child ? 44 : 40, 0, 0, Math.PI * 2); c.fill();
+  });
+  // head and shoulders from behind, for the bottom edge of a frame
+  SD.silHead = (ctx, x, y, s = 1, color = '#231710') => sil(ctx, x, y, s, color, (c) => {
+    c.beginPath(); c.ellipse(0, -96, 40, 46, 0, 0, Math.PI * 2); c.fill();
+    c.beginPath(); c.ellipse(0, 0, 86, 66, 0, 0, Math.PI * 2); c.fill();
+  });
+
   // Draw a lead with sensible defaults; `o` is any Ch.person option.
   // Watercolor washes are see-through, so a person is painted on a spare sheet first and laid down
   // three times: the washes build up to solid colour and the background no longer shows through.

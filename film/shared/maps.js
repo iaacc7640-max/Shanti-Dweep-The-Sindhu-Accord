@@ -69,6 +69,22 @@
     for (let i = 0; i < r.length; i += 2) pts.push(map.proj(r[i], r[i + 1]));
     return pts;
   };
+  // one country as a plain filled shape, optionally shifted (for maps that crack apart or merge)
+  SD.fillCountry = (ctx, map, name, { fill, stroke = null, lw = 2, dx = 0, dy = 0, alpha = 1 } = {}) => {
+    const rings = (map.detail && GEO.detail[name]) || GEO.world[name];
+    if (!rings) throw new Error(`no outline for "${name}"`);
+    ctx.save(); ctx.globalAlpha *= alpha; ctx.translate(dx, dy); ctx.beginPath();
+    for (const r of rings) { for (let i = 0; i < r.length; i += 2) { const [x, y] = map.proj(r[i], r[i + 1]); if (i) ctx.lineTo(x, y); else ctx.moveTo(x, y); } ctx.closePath(); }
+    if (stroke) { ctx.strokeStyle = stroke; ctx.lineWidth = lw; ctx.lineJoin = 'round'; ctx.stroke(); }
+    if (fill) { ctx.fillStyle = fill; ctx.fill(); }
+    ctx.restore();
+  };
+  // the projected points of a country's largest ring
+  SD.outline = (map, name) => {
+    const r = main((map.detail && GEO.detail[name]) || GEO.world[name]), pts = [];
+    for (let i = 0; i < r.length; i += 2) pts.push(map.proj(r[i], r[i + 1]));
+    return pts;
+  };
   SD.NORTH = NORTH;
   // places the film names that the engine's city list lacks
   Object.assign(GEO.cities, {

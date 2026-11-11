@@ -39,6 +39,16 @@
     return { shots: out, lines, subtitles, byId, lineById, DURATION: +t.toFixed(3) };
   }
 
-  const API = { build, guess };
+  // the fields every part's score exports, built from its shots
+  function part({ shots, dur, U, format = '16:9' }) {
+    const TL = build({ shots, dur });
+    return {
+      FPS: 30, FORMAT: U.pickFormat(format), STYLE: 'watercolor', DURATION: TL.DURATION,
+      S: Object.fromEntries(TL.shots.map((s) => [s.id, [s.t0, s.t1]])),
+      shots: TL.shots, lines: TL.lines, lineById: TL.lineById, byId: TL.byId, subtitles: TL.subtitles,
+    };
+  }
+
+  const API = { build, guess, part };
   if (node) module.exports = API; else globalThis.SDT = API;
 })();
