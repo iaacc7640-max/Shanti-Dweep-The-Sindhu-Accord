@@ -1,6 +1,13 @@
 # Known issues — Shanti Dweep: The Sindhu Accord
 
-Draft of 2026-11-11. Updated when the film is joined.
+Written 2026-11-11, after the film was joined.
+
+## What was measured on the delivered film
+- `out/shanti-dweep.mp4`: 1920x1080, 30 fps, 11:48 (708.1 s), six parts in order.
+- 81 English subtitles in `out/shanti-dweep.srt`; each starts with its spoken line (0 s apart, by construction).
+- Every spoken line and every subtitle matches `docs/script.md` character for character.
+- Loudness: -14.1 LUFS for the whole film.
+- The sound at each join between parts peaks between -25 and -35 dB: quiet, not silent.
 
 ## Changed from the brief
 1. **Tool.** The skill `skills/lemo-opuscar` was not in the repo. The film was made with the `animation-studio` skill instead, as the owner asked.
@@ -35,3 +42,5 @@ Draft of 2026-11-11. Updated when the film is joined.
 ## Sound
 21. Timing checks that failed on soft-starting sounds (a paper tear, a kettle drum) were dropped rather than fixed: those sounds have no sharp start to measure.
 22. Music sits 7 to 16 dB under speech (measured in Act I). It may be too quiet in places.
+23. A fault found and fixed during the build: one drum in Act III's crowd scene had an invalid loudness, which silenced the sound from that point and cut the joined file short. The sound step now stops with an error if any invalid sample appears. All six soundtracks were scanned afterwards and are clean.
+24. English subtitles are both burned into the picture and delivered as a separate file. Turning the file on in a player shows each line twice.

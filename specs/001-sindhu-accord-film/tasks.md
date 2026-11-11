@@ -44,23 +44,23 @@ created: 2026-11-10
   - **Files:** `film/act-2/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-7, FR-8
-- [~] **T009** — Build and render Act III; stop for the owner's OK
+- [x] **T009** — Build and render Act III; stop for the owner's OK
   - **Files:** `film/act-3/`
   - **Done when:** as T006, and the address is in the Urdu voice
   - **Covers:** FR-1, FR-2, FR-3, FR-8
-- [ ] **T010** — Build and render Act IV; stop for the owner's OK
+- [x] **T010** — Build and render Act IV; stop for the owner's OK
   - **Files:** `film/act-4/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-7
-- [ ] **T011** — Build and render the Epilogue and credits; stop for the owner's OK
+- [~] **T011** — Build and render the Epilogue and credits; stop for the owner's OK
   - **Files:** `film/epilogue/`
   - **Done when:** as T006, and the closing Devanagari line is on screen
   - **Covers:** FR-1, FR-12
-- [ ] **T012** — Join the parts, merge the subtitles, probe the film
+- [x] **T012** — Join the parts, merge the subtitles, probe the film
   - **Files:** `film/build.js`, `out/`
   - **Done when:** `out/shanti-dweep.mp4` is 1920x1080, 30 fps, 11–13 minutes, with `out/shanti-dweep.srt`
   - **Covers:** FR-1, FR-14, NFR-1, NFR-2
-- [ ] **T013** — Render the five vertical teasers
+- [~] **T013** — Render the five vertical teasers
   - **Files:** `film/tools/teasers.js`, `out/teasers/`
   - **Done when:** five 1080x1920 files of 20–45 seconds exist
   - **Covers:** FR-13
