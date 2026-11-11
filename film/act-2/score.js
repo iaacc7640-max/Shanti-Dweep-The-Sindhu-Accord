@@ -71,7 +71,7 @@
   const markers = {
     calendar: mid('2-1'), hall: mid('2-2'), headlines: ev.papers[3] + 0.6, lane: mid('2-4'), desk: mid('2-5'), clause: mid('2-6'),
     america: ev.door + 1.2, trade: ev.routeEnd + 0.5, funding: ev.snips[5] + 0.6, studio: mid('2-10'), hung: ev.fill1 + 1,
-    pin1: { t: ev.pins[0], sync: 'a' }, pin3: ev.pins[2] + 0.4, gold: ev.gold + 0.8, room: mid('2-13'), oath: ev.oath + 3, pillar: mid('2-15'),
+    pin1: ev.pins[0], pin3: ev.pins[2] + 0.4, gold: ev.gold + 0.8, room: mid('2-13'), oath: ev.oath + 3, pillar: mid('2-15'),
   };
 
   const SCORE = { ...P, ev, markers };

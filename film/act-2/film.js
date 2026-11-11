@@ -233,7 +233,7 @@
         const k = ramp(t, ev.fill0, ev.fill1, U.ease.outCubic), n = Math.round(270 * k);
         SD.hindi(ctx, 'त्रिशंकु लोकसभा', W / 2, Y(150), { size: 96, color: INK, alpha: clamp((t - ev.fill1) / 0.4) });
         SD.seats(ctx, W / 2, Y(880), X(520), { total: 543, left: n, right: n });
-        SD.latin(ctx, String(n), X(420), Y(940), { size: 90, weight: 800, color: '#6F8795' }); SD.latin(ctx, String(n), X(1500), Y(940), { size: 90, weight: 800, color: '#7E7466' });
+        SD.latin(ctx, String(n), X(420), Y(940), { size: 90, weight: 800, color: '#4F6675' }); SD.latin(ctx, String(n), X(1500), Y(940), { size: 90, weight: 800, color: '#5E5548' });
         SD.hindi(ctx, 'बहुमत: 272', W / 2, Y(820), { size: 50, color: '#5A4A3A', weight: 400 });
         if (t > ev.fill1) { const p = 0.5 + 0.5 * Math.sin((t - ev.fill1) * 6); ctx.save(); ctx.globalAlpha = 0.5 + 0.5 * p; ctx.strokeStyle = '#B5332B'; ctx.lineWidth = 5; ctx.beginPath(); ctx.arc(W / 2, Y(880) - X(380), X(150), 0, Math.PI * 2); ctx.stroke(); ctx.restore(); SD.hindi(ctx, '3 सीटें कम', W / 2, Y(270), { size: 56, color: '#B5332B' }); }
       },
