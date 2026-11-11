@@ -31,7 +31,7 @@
     { id: '3-7', min: 10, lead: 1.2, tail: 1.6, lines: [
       { id: '3.7', who: 'B', hi: 'क़ब्ज़ा करने वाले शहीद पैदा करते हैं। संविधान, नागरिक पैदा करते हैं।', en: 'Occupiers create martyrs; constitutions create citizens.' },
     ] },
-    { id: '3-8', min: 6.5, lead: 1, tail: 1.4, lines: [
+    { id: '3-8', min: 6.5, lead: 1, tail: 1.9, lines: [
       { id: '3.8', who: 'F', hi: 'हम ज़मीन नहीं लेंगे। हम ज़ंजीर तोड़ेंगे।', en: 'We will not take land. We will break a chain.' },
     ] },
     { id: '3-9', min: 12, lead: 1.4, tail: 2, lines: [
@@ -70,7 +70,7 @@
   const ev = {
     fall: L['3.1a'].t + L['3.1a'].dur * 0.55, // the chart drops
     breaking: by['3-4'].t0 + 1, // the TV cuts to breaking news
-    hand: L['3.8'].end - 0.3, // her hand comes down on the table
+    hand: L['3.8'].end + 0.25, // her hand comes down on the table, just after her last word
     clock0: by['3-9'].t0, clock1: by['3-11'].t1, // the 72-hour clock runs across three shots
     arcs: [0, 1, 2, 3, 4].map((i) => +(L['3.9'].t + 1.4 + i * 0.9).toFixed(3)),
     nodes: [0, 1, 2, 3, 4, 5, 6].map((i) => +(by['3-10'].t0 + 1 + i * 0.5).toFixed(3)),

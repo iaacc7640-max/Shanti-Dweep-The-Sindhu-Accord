@@ -66,7 +66,7 @@
     ctx.fillStyle = '#B5332B'; ctx.fillRect(x, y + h * 0.72, w, h * 0.16); ctx.fillStyle = '#17141E'; ctx.fillRect(x, y + h * 0.88, w, h * 0.12);
     ctx.restore();
     SD.latin(ctx, 'BREAKING', x + w * 0.5, y + h * 0.835, { size: h * 0.105, color: '#FFFFFF', weight: 800 });
-    if (big) { SD.hindi(ctx, 'आतंकी हमला', x + w * 0.5, y + h * 0.3, { size: h * 0.15, color: '#FFFFFF', stroke: 'rgba(0,0,0,0.6)', strokeW: 8 }); SD.hindi(ctx, channel, x + w * 0.14, y + h * 0.96, { size: h * 0.06, color: '#FFFFFF', weight: 400 }); }
+    if (big) { SD.hindi(ctx, 'आतंकी हमला', x + w * 0.5, y + h * 0.3, { size: h * 0.15, color: '#FFFFFF', stroke: 'rgba(0,0,0,0.6)', strokeW: 8 }); SD.hindi(ctx, channel, x + w * 0.16, y + h * 0.965, { size: h * 0.075, color: '#FFFFFF', weight: 400 }); }
   }
   function livingRoom(ctx, t, live) {
     SD.sky(ctx, [[0, '#3A3440'], [1, '#2A262E']]);
