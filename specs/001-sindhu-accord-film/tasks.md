@@ -40,11 +40,11 @@ created: 2026-11-10
   - **Files:** `film/act-1/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-6, FR-9
-- [~] **T008** — Build and render Act II; stop for the owner's OK
+- [x] **T008** — Build and render Act II; stop for the owner's OK
   - **Files:** `film/act-2/`
   - **Done when:** as T006
   - **Covers:** FR-1, FR-2, FR-3, FR-7, FR-8
-- [ ] **T009** — Build and render Act III; stop for the owner's OK
+- [~] **T009** — Build and render Act III; stop for the owner's OK
   - **Files:** `film/act-3/`
   - **Done when:** as T006, and the address is in the Urdu voice
   - **Covers:** FR-1, FR-2, FR-3, FR-8
