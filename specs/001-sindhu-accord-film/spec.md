@@ -7,8 +7,8 @@ created: 2026-11-10
 author: iaacc7640-max
 requested_by: iaacc7640-max
 owner: iaacc7640-max
-implemented_by: []
-support: []
+implemented_by: [noreply@anthropic.com]
+support: [iaacc7640-max]
 extends: []
 depends_on: []
 builds_against: []

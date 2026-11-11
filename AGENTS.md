@@ -18,7 +18,7 @@ Instructions for coding agents. Humans: read PROJECT.md first.
 Run `groundwork.py verify` after every change (it runs the commands below) and fix what fails. Never weaken a rule,
 add an ignore comment or skip a test to make it pass; an ignore needs a reason on the same line.
 
-- (none yet: they appear when code is added)
+- test: `node film/build.js`
 
 1. Reuse before writing: look in CODEMAP.md and search for an existing function first. Never copy-paste a block.
 2. Make the smallest change that meets the spec. No speculative abstractions, options or layers.
