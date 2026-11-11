@@ -205,6 +205,8 @@ module.exports = function sound(sc, dir) {
     const G = { drone: 0.9, flute: 1, harm: 0.9, tabla: 0.8, strings: 1, pluck: 0.9, fx: 0.9, amb: 0.9, verb: 1, voice: 1.9, ...gains };
     const stems = { ...B, verb: reverb(B.verb, { room: 0.86, damp: 0.35 }), voice };
     const mix = MIX.mixdown(stems, G, { stemDir: process.env.STEMS ? out : null });
+    // one invalid sample poisons the reverb and the encoder downstream: stop here and say where it is
+    for (let i = 0; i < mix.n; i++) if (!Number.isFinite(mix.L[i]) || !Number.isFinite(mix.R[i])) throw new Error(`invalid sample in the mix at ${(i / SR).toFixed(2)}s: a sound was added with a gain or time that is not a number`);
     MIX.highpass(mix, 24);
     if (fadeIn) mix.applyGain((t) => Math.min(1, t / fadeIn));
     MIX.fadeOut(mix, sc.DURATION - fadeOut, sc.DURATION);

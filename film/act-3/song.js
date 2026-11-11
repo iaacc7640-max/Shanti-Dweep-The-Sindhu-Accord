@@ -30,7 +30,7 @@ theme.drone(t0('3-12'), t1('3-15'), { gain: 0.8 });
 theme.fatima(t0('3-13') - 0.5, t1('3-15') - 1.8, { gain: 0.75, tabla: false, beat: 1.0 });
 // the crowds, then dawn
 sfx.crowd(t0('3-16'), t1('3-16') + 1, { size: 0.9, rise: 0.8, gain: 1 });
-for (let t = t0('3-16') + 1; t < t1('3-16'); t += 0.9) sfx.drum(t, 0.35 + 0.4 * (t - t0('3-16')) / by['3-16'].dur); // a heartbeat that grows
+for (let t = t0('3-16') + 1; t < t1('3-16'); t += 0.9) sfx.drum(t, 0.35 + 0.4 * (t - t0('3-16')) / (t1('3-16') - t0('3-16'))); // a heartbeat that grows
 sfx.wind(t0('3-17'), t1('3-17'), 0.7);
 sfx.birds(t0('3-17') + 1, t1('3-17'), 0.7);
 sfx.lock(ev.gates, 0.9);
