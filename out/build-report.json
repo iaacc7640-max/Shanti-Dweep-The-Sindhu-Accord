@@ -1,0 +1,49 @@
+{
+  "parts": [
+    {
+      "part": "cold-open",
+      "start": 0,
+      "seconds": 44.93,
+      "lines": 5
+    },
+    {
+      "part": "act-1",
+      "start": 44.93,
+      "seconds": 157.8,
+      "lines": 21
+    },
+    {
+      "part": "act-2",
+      "start": 202.73,
+      "seconds": 140.666667,
+      "lines": 15
+    },
+    {
+      "part": "act-3",
+      "start": 343.397,
+      "seconds": 164.5,
+      "lines": 20
+    },
+    {
+      "part": "act-4",
+      "start": 507.897,
+      "seconds": 151.166667,
+      "lines": 16
+    },
+    {
+      "part": "epilogue",
+      "start": 659.063,
+      "seconds": 49,
+      "lines": 4
+    }
+  ],
+  "problems": [],
+  "file": "out/shanti-dweep.mp4",
+  "width": 1920,
+  "height": 1080,
+  "fps": "30/1",
+  "seconds": 708.087333,
+  "minutes": "11:48",
+  "subtitles": 81,
+  "worstSubtitleOffsetSeconds": 0
+}

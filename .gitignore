@@ -1,0 +1,12 @@
+# Local secrets (GroundWork): never commit them; list the names in .env.example
+.env
+.env.*
+!.env.example
+# Film: downloaded voice files, rendered output, and per-part copies made by film/sync.js
+film/voices/
+film/*/out/
+film/*/engine/
+film/*/shared/
+# Delivered video is not committed
+/out/*.mp4
+/out/teasers/

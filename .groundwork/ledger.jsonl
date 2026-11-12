@@ -1,0 +1,4 @@
+{"ts": "2026-11-10T19:19:56+0000", "event": "created", "ref": "RFC-0001-sindhu-accord-film", "by": "noreply@anthropic.com"}
+{"ts": "2026-11-10T19:27:36+0000", "event": "created", "ref": "001-sindhu-accord-film", "by": "noreply@anthropic.com"}
+{"ts": "2026-11-11T09:00:18+0000", "event": "implemented", "ref": "001-sindhu-accord-film", "by": "noreply@anthropic.com", "via": "claude-code"}
+{"ts": "2026-11-11T09:00:18+0000", "event": "support", "ref": "001-sindhu-accord-film", "by": "noreply@anthropic.com", "who": ["iaacc7640-max"]}

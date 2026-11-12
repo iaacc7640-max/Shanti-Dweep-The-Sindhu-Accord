@@ -1,0 +1,22 @@
+{
+  "DECISIONS/RFC-0001-sindhu-accord-film.md": {
+    "hash": "8577b05519707f04ef1585b48706e5d56227c40dccf53d5cf960b3bb1a7b2c24",
+    "signers": [
+      {
+        "who": "noreply@anthropic.com",
+        "at": "2026-11-10T19:24:23+0000"
+      }
+    ],
+    "changes": 0
+  },
+  "specs/001-sindhu-accord-film/spec.md": {
+    "hash": "08ab239ec85d57da955bf5671857b56c5c116613211bc91227a9fa1848839b33",
+    "signers": [
+      {
+        "who": "noreply@anthropic.com",
+        "at": "2026-11-11T02:45:13+0000"
+      }
+    ],
+    "changes": 1
+  }
+}

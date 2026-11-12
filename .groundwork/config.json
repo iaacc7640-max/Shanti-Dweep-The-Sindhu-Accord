@@ -1,0 +1,18 @@
+{
+  "standard": "0.7.0",
+  "layout": {
+    "mode": "keep",
+    "decided_by": "noreply@anthropic.com",
+    "decided": "2026-11-10"
+  },
+  "quality": {
+    "mode": "keep",
+    "commands": {
+      "test": [
+        "node film/build.js"
+      ]
+    },
+    "decided_by": "noreply@anthropic.com",
+    "decided": "2026-11-10"
+  }
+}
